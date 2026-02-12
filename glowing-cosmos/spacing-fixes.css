@@ -1,0 +1,74 @@
+/* Spacing Fixes - Balanced Approach */
+
+/* Section padding - consistent across all */
+.bio-section,
+.projects-section,
+.featured-section {
+    padding: 8vh 5% !important;
+}
+
+.contact-section {
+    padding: 8vh 5% !important;
+}
+
+/* Section titles */
+.section-title {
+    margin-bottom: 1.5rem !important;
+}
+
+.section-subtitle,
+.section-subtitle-disc {
+    margin-bottom: 3rem !important;
+}
+
+/* Bio section */
+.bio-image-wrapper {
+    margin-bottom: 2.5rem;
+}
+
+.bio-subtitle {
+    margin-bottom: 1.5rem;
+}
+
+/* Projects */
+.project-list {
+    gap: 2.5rem !important;
+}
+
+/* Gallery */
+.gallery-grid {
+    gap: 1rem !important;
+}
+
+/* Contact */
+.contact-main-heading {
+    margin-bottom: 1.5rem;
+}
+
+.contact-subtext {
+    margin-bottom: 2.5rem;
+}
+
+.social-footer {
+    margin-top: 3rem;
+}
+
+/* Hero */
+.streaming-now {
+    margin-top: 2.5rem;
+}
+
+.hero-tagline {
+    margin-top: 0.8rem;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .bio-section,
+    .projects-section,
+    .featured-section,
+    .contact-section {
+        padding: 6vh 5% !important;
+    }
+}
