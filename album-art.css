@@ -1,19 +1,19 @@
-/* Images for Sound Chapters */
+/* Images for Sound Chapters - Updated for JPEG */
 
 /* Default backgrounds moved from main css */
 .album-art.art-1 {
     background: linear-gradient(135deg, rgba(255, 0, 85, 0.3), rgba(0, 229, 255, 0.3)),
-        url('prophecy.jpg') center/cover no-repeat !important;
+        url('prophecy.jpeg') center/cover no-repeat !important;
 }
 
 .album-art.art-2 {
     background: linear-gradient(135deg, rgba(0, 229, 255, 0.3), rgba(100, 50, 200, 0.3)),
-        url('akele-hum.jpg') center/cover no-repeat !important;
+        url('akele-hum.jpeg') center/cover no-repeat !important;
 }
 
 .album-art.art-3 {
     background: linear-gradient(135deg, rgba(255, 100, 50, 0.3), rgba(255, 0, 85, 0.3)),
-        url('kissa-khatam.jpg') center/cover no-repeat !important;
+        url('kissa-khatam.jpeg') center/cover no-repeat !important;
 }
 
 /* Ensure images are responsive */
