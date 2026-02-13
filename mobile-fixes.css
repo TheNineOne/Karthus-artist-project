@@ -1,0 +1,211 @@
+/* Mobile & Scroll Fixes - Consolidated & Cleaned */
+
+/* 1. SCROLL text - Global Fix */
+.scroll-indicator span {
+    display: none !important;
+    /* Hide stray scroll text */
+}
+
+ul {
+    list-style-type: none !important;
+}
+
+/* 2. Global Resets & Body Fixes */
+body,
+html {
+    overflow-x: hidden !important;
+    width: 100% !important;
+}
+
+/* 3. Helper for Height */
+.hero {
+    min-height: 100vh;
+    /* Fallback */
+    /* Support for dynamic viewport height on mobile browsers */
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 60px !important;
+    /* Account for nav */
+}
+
+/* 4. Navigation - Mobile Fix */
+@media (max-width: 768px) {
+    nav {
+        padding: 0.8rem 1rem !important;
+        flex-direction: row !important;
+        /* Keep logo and hamburger or links in row if possible, but here we stack */
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.5rem !important;
+        background: rgba(0, 0, 0, 0.95) !important;
+        width: 100% !important;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000 !important;
+    }
+
+    /* Logo centering or adjustment */
+    nav .logo {
+        font-size: 1.2rem !important;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+    nav .links {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    nav .links a {
+        font-size: 0.8rem !important;
+        padding: 0.2rem 0.5rem;
+    }
+}
+
+/* 5. Hero Section Mobile Optimization */
+@media (max-width: 768px) {
+    .hero-content {
+        width: 100%;
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: -2rem;
+        /* Pull up slightly */
+    }
+
+    /* Glitch Text Sizing */
+    .glitch {
+        font-size: 3rem !important;
+        /* Balanced size */
+        line-height: 1.1;
+        letter-spacing: 4px !important;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0.5rem !important;
+    }
+
+    /* Disable heavy glitch pseudo-elements on mobile */
+    .glitch::before,
+    .glitch::after {
+        display: none !important;
+    }
+
+    .hero .subtitle {
+        font-size: 0.9rem !important;
+        letter-spacing: 3px !important;
+        text-align: center;
+        width: 100%;
+        margin-top: 0.5rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+
+    .hero-tagline {
+        font-size: 0.8rem !important;
+        margin-top: 0.5rem !important;
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    /* Streaming Icons spacing */
+    .streaming-now {
+        margin-top: 2rem !important;
+        transform: scale(0.9);
+    }
+}
+
+/* 6. Section Titles Mobile */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem !important;
+        margin-bottom: 1.5rem !important;
+        text-align: center !important;
+        width: 100% !important;
+    }
+
+    /* Remove weird absolute positioning influences */
+    .projects-section {
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* 7. Discography Cards Mobile */
+@media (max-width: 768px) {
+    .project-list {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 2.5rem !important;
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 auto !important;
+    }
+
+    .project-card-link {
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    .project-card {
+        height: 450px !important;
+        width: 90% !important;
+        max-width: 320px !important;
+        margin: 0 auto !important;
+        transform: none !important;
+    }
+}
+
+/* 8. Container Padding */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1rem !important;
+        width: 100% !important;
+    }
+
+    .bio-section,
+    .projects-section,
+    .featured-section,
+    .contact-section {
+        padding: 3rem 1rem !important;
+    }
+}
+
+/* 9. Contact Section Alignment */
+@media (max-width: 768px) {
+    .contact-container-new {
+        width: 100% !important;
+        padding: 0 1rem !important;
+    }
+
+    .contact-main-heading {
+        font-size: 1.8rem !important;
+        text-align: center;
+        line-height: 1.3;
+    }
+
+    .cta-button {
+        width: 100%;
+        padding: 1rem !important;
+    }
+
+    .social-icons-footer {
+        flex-wrap: wrap;
+        gap: 1.5rem !important;
+        justify-content: center;
+    }
+}

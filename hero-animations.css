@@ -1,0 +1,97 @@
+/* Additional Hero Background Animations */
+
+/* Animated background text - Layer 2 (KANPUR) */
+.hero::before {
+    content: 'KANPUR KANPUR KANPUR KANPUR KANPUR';
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 9rem;
+    font-weight: 900;
+    color: rgba(0, 229, 255, 0.08);
+    white-space: nowrap;
+    z-index: 2;
+    animation: slideTextReverse 25s linear infinite;
+    pointer-events: none;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Layer 3 - VOICE */
+.hero .hero-content .subtitle::before {
+    content: 'VOICE VOICE VOICE VOICE VOICE VOICE';
+    position: absolute;
+    top: -250px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 7rem;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.06);
+    white-space: nowrap;
+    z-index: -1;
+    animation: slideText 30s linear infinite;
+    pointer-events: none;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Layer 4 - CULTURE */
+.hero .hero-content .subtitle::after {
+    content: 'CULTURE CULTURE CULTURE CULTURE CULTURE';
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 8rem;
+    font-weight: 900;
+    color: rgba(255, 50, 100, 0.07);
+    white-space: nowrap;
+    z-index: -1;
+    animation: slideTextReverse 22s linear infinite;
+    pointer-events: none;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Layer 5 - SOUND */
+.hero .scroll-indicator::before {
+    content: 'SOUND SOUND SOUND SOUND SOUND SOUND';
+    position: absolute;
+    top: -500px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 10rem;
+    font-weight: 900;
+    color: rgba(255, 0, 85, 0.06);
+    white-space: nowrap;
+    z-index: -1;
+    animation: slideText 18s linear infinite;
+    pointer-events: none;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Make subtitle and scroll-indicator positioned */
+.hero .subtitle,
+.hero .scroll-indicator {
+    position: relative;
+}
+
+/* Reverse animation */
+@keyframes slideTextReverse {
+    0% {
+        transform: translate(-50%, 0) translateX(-50%);
+    }
+
+    100% {
+        transform: translate(-50%, 0) translateX(0);
+    }
+}
+
+/* Update existing slideText animation */
+@keyframes slideText {
+    0% {
+        transform: translate(-50%, 0) translateX(0);
+    }
+
+    100% {
+        transform: translate(-50%, 0) translateX(-50%);
+    }
+}
